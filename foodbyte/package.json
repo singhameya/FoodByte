@@ -1,0 +1,19 @@
+{
+  "name": "foodbits",
+  "version": "1.0.0",
+  "description": "hshacks",
+  "main": "test.js",
+  "scripts": {
+    "test": "console.log(\"test\");",
+    "start": "node test.js"
+  },
+  "author": "shatayu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "prompt-sync": "^4.1.4",
+    "unirest": "^0.5.1",
+    "watson-developer-cloud": "^2.27.1"
+  }
+}
