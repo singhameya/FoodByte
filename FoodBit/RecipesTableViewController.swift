@@ -8,7 +8,18 @@
 
 import UIKit
 
+protocol RecipesTableViewControllerDelegate : class {
+    func returnFromTableView( controller : RecipesTableViewController )
+}
+
 class RecipesTableViewController: UITableViewController {
+
+    weak var delegate : RecipesTableViewControllerDelegate?
+    var recipes = NSArray()
+    
+    @IBAction func swipeRight(_ sender: UIScreenEdgePanGestureRecognizer) {
+        delegate!.returnFromTableView(controller: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,24 +40,33 @@ class RecipesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath)
 
         // Configure the cell...
+        
+        let dishNameLabel = cell.viewWithTag(1) as! UILabel
+        let timeToPrepLabel = cell.viewWithTag(2) as! UILabel
+        let idLabel = cell.viewWithTag(3) as! UILabel
+        
+        let recipe = recipes[indexPath.row] as! [String:Any]
+        
+        dishNameLabel.text = recipe["title"] as? String
+        timeToPrepLabel.text = recipe["readyInMinutes"] as? String
+        idLabel.text = recipe["id"] as? String
+        
 
         return cell
     }
-    */
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

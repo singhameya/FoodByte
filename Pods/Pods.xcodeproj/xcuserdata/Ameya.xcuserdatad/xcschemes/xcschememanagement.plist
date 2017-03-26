@@ -4,18 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FoodBit.xcscheme</key>
+		<key>Pods-FoodBit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9DD9CA351E875AE400B78B67</key>
+		<key>A76111E309F9E9BD7036586659A47499</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
+		</dict>
+		<key>C7637D2E4580B2674F33B2C6EA714E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

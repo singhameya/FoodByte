@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821BBEC2A2DA45D64DD6FC05 /* Pods_FoodBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC47BC9A92F76E23A7FF0E5 /* Pods_FoodBit.framework */; };
 		9DD9CA3A1E875AE500B78B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA391E875AE500B78B67 /* AppDelegate.swift */; };
-		9DD9CA3C1E875AE500B78B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA3B1E875AE500B78B67 /* ViewController.swift */; };
+		9DD9CA3C1E875AE500B78B67 /* SelectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA3B1E875AE500B78B67 /* SelectionsViewController.swift */; };
 		9DD9CA3F1E875AE500B78B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9CA3D1E875AE500B78B67 /* Main.storyboard */; };
 		9DD9CA421E875AE500B78B67 /* FoodBit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA401E875AE500B78B67 /* FoodBit.xcdatamodeld */; };
 		9DD9CA441E875AE500B78B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9CA431E875AE500B78B67 /* Assets.xcassets */; };
 		9DD9CA471E875AE500B78B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD9CA451E875AE500B78B67 /* LaunchScreen.storyboard */; };
+		9DD9CA4F1E87A31300B78B67 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA4E1E87A31200B78B67 /* RecipesTableViewController.swift */; };
+		9DD9CA511E87C1AC00B78B67 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9CA501E87C1AC00B78B67 /* SessionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88070523A5C13B754818DD39 /* Pods-FoodBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodBit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodBit/Pods-FoodBit.debug.xcconfig"; sourceTree = "<group>"; };
 		9DD9CA361E875AE500B78B67 /* FoodBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD9CA391E875AE500B78B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DD9CA3B1E875AE500B78B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DD9CA3B1E875AE500B78B67 /* SelectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionsViewController.swift; sourceTree = "<group>"; };
 		9DD9CA3E1E875AE500B78B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DD9CA411E875AE500B78B67 /* FoodBit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodBit.xcdatamodel; sourceTree = "<group>"; };
 		9DD9CA431E875AE500B78B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD9CA461E875AE500B78B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DD9CA481E875AE500B78B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DD9CA4E1E87A31200B78B67 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		9DD9CA501E87C1AC00B78B67 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		D8BE1B15D1DDE954EB9E2530 /* Pods-FoodBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodBit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodBit/Pods-FoodBit.release.xcconfig"; sourceTree = "<group>"; };
+		EAC47BC9A92F76E23A7FF0E5 /* Pods_FoodBit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodBit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821BBEC2A2DA45D64DD6FC05 /* Pods_FoodBit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B14F83C5302D0EB84764B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88070523A5C13B754818DD39 /* Pods-FoodBit.debug.xcconfig */,
+				D8BE1B15D1DDE954EB9E2530 /* Pods-FoodBit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F5B4ABE3CF6A9764AFCE3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC47BC9A92F76E23A7FF0E5 /* Pods_FoodBit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DD9CA2D1E875AE400B78B67 = {
 			isa = PBXGroup;
 			children = (
 				9DD9CA381E875AE500B78B67 /* FoodBit */,
 				9DD9CA371E875AE500B78B67 /* Products */,
+				07B14F83C5302D0EB84764B2 /* Pods */,
+				7F5B4ABE3CF6A9764AFCE3DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				9DD9CA391E875AE500B78B67 /* AppDelegate.swift */,
-				9DD9CA3B1E875AE500B78B67 /* ViewController.swift */,
+				9DD9CA3B1E875AE500B78B67 /* SelectionsViewController.swift */,
+				9DD9CA4E1E87A31200B78B67 /* RecipesTableViewController.swift */,
 				9DD9CA3D1E875AE500B78B67 /* Main.storyboard */,
 				9DD9CA431E875AE500B78B67 /* Assets.xcassets */,
 				9DD9CA451E875AE500B78B67 /* LaunchScreen.storyboard */,
 				9DD9CA481E875AE500B78B67 /* Info.plist */,
 				9DD9CA401E875AE500B78B67 /* FoodBit.xcdatamodeld */,
+				9DD9CA501E87C1AC00B78B67 /* SessionDelegate.swift */,
 			);
 			path = FoodBit;
 			sourceTree = "<group>";
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DD9CA4B1E875AE500B78B67 /* Build configuration list for PBXNativeTarget "FoodBit" */;
 			buildPhases = (
+				F436FF58C9EE207BE9DDA3A7 /* [CP] Check Pods Manifest.lock */,
 				9DD9CA321E875AE400B78B67 /* Sources */,
 				9DD9CA331E875AE400B78B67 /* Frameworks */,
 				9DD9CA341E875AE400B78B67 /* Resources */,
+				5671DBB8DB5523BB1D8DB3D4 /* [CP] Embed Pods Frameworks */,
+				8236FD07F4D693EF43817D68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +168,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5671DBB8DB5523BB1D8DB3D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodBit/Pods-FoodBit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8236FD07F4D693EF43817D68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodBit/Pods-FoodBit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F436FF58C9EE207BE9DDA3A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DD9CA321E875AE400B78B67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9DD9CA421E875AE500B78B67 /* FoodBit.xcdatamodeld in Sources */,
-				9DD9CA3C1E875AE500B78B67 /* ViewController.swift in Sources */,
+				9DD9CA511E87C1AC00B78B67 /* SessionDelegate.swift in Sources */,
+				9DD9CA3C1E875AE500B78B67 /* SelectionsViewController.swift in Sources */,
+				9DD9CA4F1E87A31300B78B67 /* RecipesTableViewController.swift in Sources */,
 				9DD9CA3A1E875AE500B78B67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +344,7 @@
 		};
 		9DD9CA4C1E875AE500B78B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88070523A5C13B754818DD39 /* Pods-FoodBit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7933PL9D3D;
@@ -269,11 +353,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.singhameya.FoodBit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9DD9CA4D1E875AE500B78B67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BE1B15D1DDE954EB9E2530 /* Pods-FoodBit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7933PL9D3D;
@@ -282,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.singhameya.FoodBit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -304,6 +391,7 @@
 				9DD9CA4D1E875AE500B78B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
